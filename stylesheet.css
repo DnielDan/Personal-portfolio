@@ -455,4 +455,9 @@ footer {
         font-size: 1.8rem; /*Project2 name to fit on one line*/
     }
 }
+@media (max-height: 400px) {
+    .taskbar {
+        display: none;
+    }
+}
 /*Phones*/
