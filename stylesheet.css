@@ -1,0 +1,458 @@
+/*Tag Specific*/
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: black;
+    color: #FCFAFF;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "Tektur", serif;
+}
+h2 {
+    color: #45436D;
+    font-size: 3rem;
+    font-weight: 100;
+}
+h3 {
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+p {
+    font-size: 25px;
+}
+span {
+    color: hsl(240, 13%, 50%);
+}
+.span1 {
+    color: #A8B4FF;
+}
+a {
+    text-decoration: none;
+    color: #FCFAFF;
+}
+a:hover {
+    color: #45436D;
+}
+/*Specific*/
+
+
+
+/*Color/style*/
+.Auburn, .help {
+    color: #A8B4FF;
+}
+.name {
+    display: block;
+    color: #45436D;
+    font-size: 5rem;
+}
+.underline {
+    text-decoration: underline;
+    color: #A8B4FF;
+}
+/*Color*/
+
+
+
+/*Task bar*/
+.taskbarStructure {
+    display: flex;
+    justify-content: center;
+}
+.taskbar {
+    position: fixed;
+    display: flex;
+    background-color: black;
+    border-top: 30px solid black;
+    border-bottom: 30px solid black;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    z-index: 10;
+}
+.initial {
+    position: absolute;
+    left: 50px;
+    font-size: 3rem;
+    color: #FCFAFF;
+}
+.taskbar1{
+    font-size: 20px;
+}
+.taskbar2 {
+    margin-right: 50px;
+}
+/*Task Bar*/
+
+
+
+/*Website Structure*/
+.structure {
+    display: flex;
+    justify-content: center;
+}
+.left, .right {
+    width: 10%;
+}
+.middle {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+/*Website Structure*/
+
+
+
+/*Section Structure*/
+.contents {
+    min-height: 100vh;
+}
+.contentsContactMe { 
+    min-height: 80vh;
+}
+.item {
+    display: flex;
+    position: relative;
+    top: 10%;
+    overflow: hidden;
+}
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Section Structure*/
+
+
+
+/*Section: About*/
+.section1 {
+    top: 20%;
+}
+.aboutmecontainer {
+    margin: 0;
+}
+.image1-container {
+    position: relative;
+    margin-top: 35px;
+}
+.mypicture {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    border-radius: 10px;
+    border: 5px solid #A8B4FF;
+    margin: 20px 50px;
+}
+.image1border1 {
+    border: 5px solid #FCFAFF;
+    position: absolute;
+    border-radius: 10px;
+    width: 200px;
+    height: 350px;
+    margin-left: 30px;
+}
+.image1border2 {
+    border: 5px solid #45436D;
+    position: absolute;
+    border-radius: 10px;
+    width: 200px;
+    height: 350px;
+    margin: 40px 70px;
+}
+.languages {
+    display: flex;
+    justify-content: space-around;
+}
+.l1 {
+    max-width: 200px;
+}
+/*Section: About*/
+
+
+
+/*Section: Projects*/
+.image2-container, .image3-container {
+    position: relative;
+}
+.project1img, .project2img {
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    border: 5px solid #A8B4FF;
+    margin: 20px;
+    position: relative;
+}
+.project2img {
+    margin-top: 0px;
+    border: 5px solid #45436D;
+}
+.image2border1, .image3border1 {
+    border: 5px solid #45436D;
+    border-radius: 10px;
+    position: absolute;
+    width: 450px;
+    height: 300px;
+}
+.image3border1 {
+    margin: 20px 40px;
+    border: 5px solid #A8B4FF;
+}
+.project1 {
+    margin-right: 20px;
+}
+.project1 > p {
+    max-width: 500px;
+}
+.project2 {
+    justify-content: flex-end;
+    margin-left: 20px;
+}
+.projectname-container2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.right-align {
+    text-align: right;
+}
+/*Section: Projects*/
+
+
+
+/*Section: Contact*/
+.section3 {
+    justify-content: center;
+    text-align: center;
+    top: 20%;
+}
+.section3 > h2 {
+    margin-bottom: 0px;
+}
+.section3 > p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.social {
+    color: #A8B4FF;
+}
+/*Section: Contact*/
+
+
+
+/*Footer*/
+.footer {
+    text-align: center;
+    font-size: 25px;
+}
+footer {
+    margin-bottom: 30px;
+}
+/*Footer*/
+
+
+
+/*Size-adjust (Desktop)*/
+@media (min-width: 1501px) {
+    .middle {
+        max-width: 1200px;
+        min-width: 1200px;
+    }
+    .left, .right {
+        max-width: 150px;
+        min-width: 150px;
+    }
+    .taskbar {
+        width: 1500px;
+    }
+}
+@media (max-width: 1500px) {
+    .middle {
+        width: 81%;
+    }
+    .left, .right {
+        width: 9.5%;
+    }
+    .taskbar {
+        width: 100%;
+    }
+}
+/*Size-adjust (Desktop)*/
+
+
+
+/*Size-adjust (Smaller width - Desktop)*/
+@media (max-width: 1112px) {
+    /*Section: AboutMe*/
+    .section1 {
+        top: 0%;
+    }
+    .item {
+        top: 8%;
+    }
+    .section3 {
+        top: 35%;
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header {
+        align-items: flex-start;
+    }
+    .aboutme .image1-container {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+    
+    /*Section: Projects*/
+    
+    .project1, .project2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project1 .image2-container, .project2 .image3-container {
+        margin-top: 20px;
+    }
+    .project2 {
+        margin: 0;
+        padding: 0;
+    }
+    .project2 > .right-align {
+        text-align: start;
+    }
+    .image2-container, .image3-container {
+        width: 90%;
+        max-width: 450px;
+    }
+    .projectname-container1, .projectname-container2 {
+        justify-content: flex-start;
+        margin: 10px;
+        text-align: left;
+        display: block;
+    }   
+    .project1img, .project2img {
+        padding: 0;
+        margin: 0;
+    }
+    .project2img {
+        margin-bottom: 20px;
+    }
+    .image2border1 {
+        margin: -20px;
+    }
+    .image3border1 {
+        margin: 20px;
+    }
+    .headerproject {
+        text-align: start;
+    }
+    .socials {
+        flex-direction: row;
+        margin-bottom: 50%;
+    }
+    /*Section: Contact*/
+    .section3 {
+        align-items: center!important;
+    }
+}
+/*Size-adjust (Smaller width - Desktop)*/
+
+
+
+/*Phones*/
+@media (max-width: 768px) {
+    .left, .right {
+        width: 7.5%;
+    }
+    .middle {
+        width: 85%;
+    }
+    .taskbar {
+        width: 100%;
+    }
+    .languages {
+        display: flex;
+        justify-content: space-between;
+    }
+    .project1img, .project2img {
+        flex-shrink: 1;
+        width: 98%;
+        max-width: 450px;
+    }
+    .image2border1, .image3border1 {
+        width: 100%;
+        margin: -4px;
+        padding-bottom: 8px;
+    }
+    .image3-container {
+        margin-right: 5px;
+    }
+    .project1 {
+        margin: 0;
+    }
+}
+@media (max-width: 550px) and (max-height: 1000px) {
+    .taskbar1 {
+        display: none;
+    }
+    .taskbar {
+        height: 4%;
+    }
+    .initial {
+        position: absolute;
+        left: 20px;
+        font-size: 200%;
+    }
+    .contact {
+        margin-bottom: 60%;
+        margin-top: 30%;
+    }
+    .aboutme {
+        margin-bottom: 30%;
+    }
+    .image1 {
+        max-height: 300px;
+        max-width: 180px;
+    }
+    .image2 {
+        max-height: 200px;
+    }
+    .image3 {
+        max-height: 200px;
+    }
+    p {
+        font-size: 20px;
+    }
+    footer {
+        font-size: 18px;
+        margin: 10px;
+    }
+    .name {
+        font-size: 180%;
+    }
+    .headerproject {
+        margin-bottom: 0;
+        font-size: 2.15rem;
+    }
+    .projectname-container2 {
+        margin-top: 20%;
+    }
+}
+@media (max-width: 550px) {
+    .image2border1, .image3border1 {
+        padding-right: 2px;
+    }
+}
+@media (max-width: 410px) {
+    .header-size {
+        font-size: 1.8rem; /*Project2 name to fit on one line*/
+    }
+}
+/*Phones*/
