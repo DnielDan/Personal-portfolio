@@ -246,7 +246,7 @@ a:hover {
 /*Footer*/
 .footer {
     text-align: center;
-    font-size: 25px;
+    font-size: 18px;
 }
 footer {
     margin-bottom: 30px;
@@ -431,7 +431,7 @@ footer {
         font-size: 20px;
     }
     footer {
-        font-size: 18px;
+        font-size: 12px;
         margin: 10px;
     }
     .name {
