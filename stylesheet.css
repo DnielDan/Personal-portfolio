@@ -146,6 +146,7 @@ a:hover {
     border-radius: 10px;
     border: 5px solid #A8B4FF;
     margin: 20px 50px;
+    z-index: 3;
 }
 .image1border1 {
     border: 5px solid #FCFAFF;
@@ -154,6 +155,8 @@ a:hover {
     width: 200px;
     height: 350px;
     margin-left: 30px;
+    z-index: 2;
+    transition: width 0.3s ease, height 0.3s ease, transform 0.3s ease;
 }
 .image1border2 {
     border: 5px solid #45436D;
@@ -162,6 +165,8 @@ a:hover {
     width: 200px;
     height: 350px;
     margin: 40px 70px;
+    z-index: 1;
+    transition: width 0.3s ease, height 0.3s ease, transform 0.3s ease;
 }
 .languages {
     display: flex;
@@ -185,6 +190,7 @@ a:hover {
     border: 5px solid #A8B4FF;
     margin: 20px;
     position: relative;
+    transition: all 0.3s ease;
 }
 .project2img {
     margin-top: 0px;
