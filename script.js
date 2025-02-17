@@ -11,26 +11,28 @@ myImage.addEventListener('mouseover', () => {
     
     border1.style.width = '210px';
     border1.style.height = '360px';
-    border2.style.width = '220px';
-    border2.style.height = '370px';
-
     border1.style.backgroundColor = '#FCFAFF';
-    border2.style.backgroundColor = '#45436D';
-
     border1.style.transform = 'translate(15px, 15px)';
-    border2.style.transform = 'translate(-30px, -30px)';
+
+    setTimeout(() => {
+        border2.style.width = '220px';
+        border2.style.height = '370px';
+        border2.style.backgroundColor = '#45436D';
+        border2.style.transform = 'translate(-30px, -30px)';
+    }, 200);
 });
 myImage.addEventListener('mouseout', () => {
     
-    border1.style.width = '200px';
-    border1.style.height = '350px';
+    setTimeout(() => {
+        border1.style.width = '200px';
+        border1.style.height = '350px';
+        border1.style.backgroundColor = 'black';
+        border1.style.transform = 'translate(0, 0)';
+    }, 200);
+
     border2.style.width = '200px';
     border2.style.height = '350px';
-
-    border1.style.backgroundColor = 'black';
     border2.style.backgroundColor = 'black';
-
-    border1.style.transform = 'translate(0, 0)';
     border2.style.transform = 'translate(0, 0)';
 });
 
